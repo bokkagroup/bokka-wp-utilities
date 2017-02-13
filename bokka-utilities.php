@@ -35,32 +35,6 @@ class Utilities {
 
     public function __construct()
     {
-        if (!defined('BOKKA_UTILITIES_DIRECTORY')) {
-            define('BOKKA_UTILITIES_DIRECTORY', plugin_dir_path(__FILE__));
-        }
-
-        if (!defined('BOKKA_ENV') && !defined('BOKKA_CHILD_DIR')) {
-            define('BOKKA_PARENT_DIR',  get_template_directory());
-            define('BOKKA_CHILD_DIR',   get_stylesheet_directory());
-        }
-
-        if (!defined('BOKKA_ENV') && isset($_SERVER) && $_SERVER['HTTP_HOST']) {
-            
-            $host = $_SERVER['HTTP_HOST'];
-
-            if (strpos($host, '.local') !== false) {
-                define('BOKKA_ENV', "local");
-            } elseif (strpos($host, 'staging') !== false) {
-                define('BOKKA_ENV', "staging");
-            } else {
-                define('BOKKA_ENV', "production");
-            }
-        }
-
-        if (!defined('BOKKA_STD_ERROR')) {
-            define('BOKKA_STD_ERROR', "Bokka Utilities Error: ");
-        }
-
         // autoload classes in /utilites directory
         spl_autoload_register(array($this, 'utility_loader'));
     }

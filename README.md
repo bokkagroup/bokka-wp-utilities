@@ -31,8 +31,3 @@ Several global variables are created by this plugin and can be used through othe
 ## Available Methods
 
 Need to detail out the available methods here.
-
-## TODO
-
-* Constants class (singleton)
-    * Environment, theme, plugins

@@ -5,7 +5,7 @@ Plugin Name:    Bokka Utilities
 Plugin URI:     http://bokkagroup.com
 Description:    
 Author:         Bokka Group
-Version:        0.0.5
+Version:        0.0.6
 Author URI:     http://bokkagroup.com
 License:        GPL2
 

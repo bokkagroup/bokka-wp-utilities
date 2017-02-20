@@ -1,0 +1,13 @@
+{
+    "name": "bokka/bokka-utilities",
+    "description": "A utilities plugin for the Bokka MVC Framework for wordpress.",
+    "type": "git",
+    "license": "GNU2",
+    "authors": [
+        {
+            "name": "codewizard",
+            "email": "mikemcguire.dev@gmail.com"
+        }
+    ],
+    "require": {}
+}

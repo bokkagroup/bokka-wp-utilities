@@ -49,4 +49,9 @@ class Alerts {
     }
 }
 
+<<<<<<< 7d27e6997b081acceee1e813ee7c0e47980a663e
 $Alerts = Alerts::get_instance();
+=======
+
+$BokkaWPUtilities = Alerts::get_instance();
+>>>>>>> Adding an alerts utility

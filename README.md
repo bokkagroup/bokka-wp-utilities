@@ -1,5 +1,6 @@
 # Bokka WordPress Utilities
 
+<<<<<<< 7d27e6997b081acceee1e813ee7c0e47980a663e
 Intended to provide global utilities for themes and plugins. Intended to be used with the Bokka WP Theme and Bokka MVC plugin. This plugin should be run from the `mu-plugins` folder. For more information on must use plugins see the [WordPress Codex](https://codex.wordpress.org/Must_Use_Plugins).
 
 ## Usage
@@ -31,3 +32,7 @@ Several global variables are created by this plugin and can be used through othe
 ## Available Methods
 
 Need to detail out the available methods here.
+=======
+Intended to provide global utilities for themes and plugins. Intended to be used with the Bokka WP Theme and Bokka MVC plugin.
+This plugin should be run from the `mu-plugins` folder. For more information on must use plugins see the [WordPress Codex](https://codex.wordpress.org/Must_Use_Plugins).
+>>>>>>> Adding an alerts utility

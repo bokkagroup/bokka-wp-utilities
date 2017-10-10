@@ -3,7 +3,7 @@
 /*
 Plugin Name:    Bokka Utilities
 Plugin URI:     http://bokkagroup.com
-Description:    
+Description:
 Author:         Bokka Group
 Version:        0.0.1
 Author URI:     http://bokkagroup.com
@@ -30,7 +30,7 @@ namespace BokkaWP;
  * @version 0.0.1 Singleton
  */
 class Utilities {
-    
+
     private static $instance;
 
     public function __construct()
@@ -39,13 +39,8 @@ class Utilities {
             define('BOKKA_UTILITIES_DIRECTORY', plugin_dir_path(__FILE__));
         }
 
-        if (!defined('BOKKA_ENV') && !defined('BOKKA_CHILD_DIR')) {
-            define('BOKKA_PARENT_DIR',  get_template_directory());
-            define('BOKKA_CHILD_DIR',   get_stylesheet_directory());
-        }
-
         if (!defined('BOKKA_ENV') && isset($_SERVER) && $_SERVER['HTTP_HOST']) {
-            
+
             $host = $_SERVER['HTTP_HOST'];
 
             if (strpos($host, '.local') !== false) {
@@ -67,8 +62,8 @@ class Utilities {
 
     /**
      * Autoload utility classes
-     * @param  array $className 
-     * @return bool            
+     * @param  array $className
+     * @return bool
      */
     public function utility_loader($className)
     {
